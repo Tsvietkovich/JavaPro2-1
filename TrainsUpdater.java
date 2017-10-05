@@ -14,12 +14,12 @@ import java.io.IOException;
 
 public class TrainsUpdater {
     private String path;
-    private String pathUpdate;
+   
     private final Document document;
 
-    public TrainsUpdater(String path, String pathUpdate) {
+    public TrainsUpdater(String path) {
         this.path = path;
-        this.pathUpdate = pathUpdate;
+        
         this.document = createDocument(path);
     }
 
@@ -51,23 +51,10 @@ public class TrainsUpdater {
     }
 
      public void createXMLDocument () throws TransformerException {
-        TrainsCreater.createXMLDoc(this.pathUpdate, this.document);
+        TrainsCreater.createXMLDoc(this.path, this.document);
      }
 
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    public String getPathUpdate() {
-        return pathUpdate;
-    }
-
-    public void setPathUpdate(String pathUpdate) {
-        this.pathUpdate = pathUpdate;
+   
     }
 }
 
