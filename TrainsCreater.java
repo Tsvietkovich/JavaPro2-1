@@ -13,7 +13,7 @@ import java.io.File;
 
 public class TrainsCreater {
     public static void main(String[] args) {
-        String path = "E:\\JAVA\\Projects\\OOP\\src\\pro\\lecture_2\\Trains\\trains.xml";
+        String path = "trains.xml";
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder;
 
